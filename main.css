@@ -1,0 +1,103 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "montserrat", sans-serif;
+  /*background-image: url("firewatch.jpg");
+  background-size: cover;
+  background-position: top center;*/
+}
+.app-wrapp {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background-image: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0.2),
+    rgba(0, 0, 0, 0.2)
+  );
+}
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 50px 15px 15px;
+}
+header input {
+  width: 100%;
+  max-width: 280px;
+  padding: 10px 15px;
+  border: none;
+  outline: none;
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 16px 0px;
+  border-bottom: 3px solid orange;
+  color: #313131;
+  font-size: 20px;
+  font-weight: 300;
+  transition: 0.2 ease-out;
+}
+header input:focus {
+  background-color: rgba(0, 0, 0, 0.2);
+}
+main {
+  flex: 1 1 100%;
+  padding: 25px 25px 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+.lugar .ciudad {
+  color: seashell;
+  font-size: 35px;
+  font-weight: 500;
+  margin-bottom: 5px;
+}
+.lugar .fecha {
+  color: seashell;
+  font-size: 20px;
+}
+.current .temperatura {
+  color: seashell;
+  font-size: 100px;
+  font-weight: 900;
+  margin: 30px 0px;
+  text-shadow: 2px 4px rgba(0, 0, 0, 0.6);
+}
+.current .temperatura span {
+  font-weight: 500;
+}
+.current .clima {
+  color: seashell;
+  font-size: 25px;
+  font-weight: 900;
+  font-style: italic;
+  margin-bottom: 15px;
+  text-shadow: 0px 4px rgba(0, 0, 0, 0.4);
+}
+.current .max-min {
+  color: seashell;
+  font-size: 25px;
+  font-weight: 500;
+  text-shadow: 0px 4px rgba(0, 0, 0, 0.4);
+}
+body {
+	background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+	background-size: 400% 400%;
+	animation: gradient 15s ease infinite;
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
